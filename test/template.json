@@ -1,0 +1,18 @@
+{
+	"name" : "c",
+	"author" : "Sigurd Berg Svela",
+
+	"static" : ["items/static/**"],
+	"std" : {
+		"vcs" : {
+			"git" : "items/vcs/.gitignore"
+		}
+	},
+	"args" : {
+		"arg" : "files/to/add",
+		"arg" : ["files/to/add", "files/to/add"],
+		"arg" : {
+			"if-this-val" : "add these files"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+build:
+	mkdir build;\
+	cd build;\
+	gcc -I../ext/* -c ../src/*.c ../src/*.h;\
+	gcc *.o -o build;\
+	rm *.o
+
+clean:
+	rm -rf build
+
+run:
+	./build/build
+
+build-tests:
+	mkdir build-tests;\
+	cd build-tests;\
+	gcc -I../ext/* -c ../src/*.h ../tests/*.h ../src/*.c ../tests/*.c;\
+	gcc *.o -o tests-build;\
+	rm *.o;\
+	cd ..
+
+clean-tests:
+	rm -rf build-tests
+
+run-tests:
+	build-tests
+	./build-tests/build-tests
+

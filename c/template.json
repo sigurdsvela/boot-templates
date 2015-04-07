@@ -1,0 +1,32 @@
+{
+	"name" : "c",
+
+	"static" : "static",
+	"std-options" : {
+		"vcs" : {
+			"git" : "vcs/.gitignore",
+			"svn" : "vcs/.svnignore"
+		},
+		"builder" : {
+			"make" : "builder/makefile"
+		},
+		"tester" : {
+			"manual" : [
+				"tests/", 
+				{
+					"builder/makefile-tester-manual":"makefile"
+				}
+			]
+		}
+	},
+	
+	"options" : {
+		"test" : {
+			"values" : {
+				"hey" : ""
+			},
+			"required" : false,
+			"description" : "Does nothing"
+		}
+	}
+}
