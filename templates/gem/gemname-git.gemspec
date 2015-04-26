@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'gemname'
+  s.name        = '[[!gemname]]'
   s.version     = "0.1.0"
   # s.executables << 'gemname'
   s.licenses    = ['licenses']

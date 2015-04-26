@@ -1,6 +1,6 @@
 {
-  "name" : "template-name",
-  "description" : "description",
+  "name" : "gem",
+  "description" : "Create a new gem project",
   "static" : "static",
 
   "options" : {
@@ -8,10 +8,22 @@
       "description" : "\"Choose\" version controll system",
       "values" : {
         "git" : [
-          {"gemname-git.gemspec":"gemname.gemspec"},
+          {"gemname-git.gemspec":"[[!gemname]].gemspec"},
           {"../../gitignores/Ruby.gitignore":".gitignore"}
+        ],
+        "none" : [
+          {"gemname.gemspec":"[[!gemname]].gemspec"}
         ]
-      }
+      },
+      "default" : "none"
+    },
+    "--bunder" : {
+      "description":"Include Gemspec file",
+      "files" : [
+        {
+          "Gemfile":"Gemfile",
+        },
+      ]
     }
   }
 }
