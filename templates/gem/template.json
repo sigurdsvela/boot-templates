@@ -1,0 +1,17 @@
+{
+  "name" : "template-name",
+  "description" : "description",
+  "static" : "static",
+
+  "options" : {
+    "--vcs" : {
+      "description" : "\"Choose\" version controll system",
+      "values" : {
+        "git" : [
+          {"gemname-git.gemspec":"gemname.gemspec"},
+          {"../../gitignores/Ruby.gitignore":".gitignore"}
+        ]
+      }
+    }
+  }
+}
