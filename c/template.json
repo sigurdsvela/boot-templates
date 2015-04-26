@@ -7,7 +7,7 @@
 		"--vcs" : {
 			"description" : "Choose version controll system",
 			"values" : {
-				"git" : "vcs/.gitignore",
+				"git" : {"../gitignores/C.gitignore":".gitignore"},
 				"svn" : "vcs/.svnignore"
 			}
 		},
