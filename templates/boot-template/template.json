@@ -1,0 +1,5 @@
+{
+  "name" : "boot-template",
+  "description" : "Create starting point for a boot template",
+  "static" : "static"
+}

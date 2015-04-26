@@ -1,0 +1,7 @@
+{
+  "name" : "template-name",
+  "description" : "description",
+  "static" : "static-files",
+
+  "options" : {}
+}
