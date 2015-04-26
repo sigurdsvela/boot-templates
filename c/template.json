@@ -1,32 +1,27 @@
 {
 	"name" : "c",
-
+	"description" : "Entry point for a standard c project",
 	"static" : "static",
-	"std-options" : {
-		"vcs" : {
-			"git" : "vcs/.gitignore",
-			"svn" : "vcs/.svnignore"
-		},
-		"builder" : {
-			"make" : "builder/makefile"
-		},
-		"tester" : {
-			"manual" : [
-				"tests/", 
-				{
-					"builder/makefile-tester-manual":"makefile"
-				}
-			]
-		}
-	},
 	
 	"options" : {
-		"test" : {
+		"--vcs" : {
+			"description" : "Choose version controll system",
 			"values" : {
-				"hey" : ""
-			},
-			"required" : false,
-			"description" : "Does nothing"
+				"git" : "vcs/.gitignore",
+				"svn" : "vcs/.svnignore"
+			}
+		},
+		"--builder" : {
+			"description" : "Choose builder script type",
+			"values" : {
+				"make" : "builder/makefile"
+			}
+		},
+		"--tester" : {
+			"description" : "Choose test system",
+			"values" : {
+				"manual" : {"builder/makefile-tester-manual":"makefile"}
+			}
 		}
 	}
 }
