@@ -21,9 +21,14 @@
       "description":"Include Gemspec file",
       "files" : [
         {
-          "Gemfile":"Gemfile",
-        },
+          "Gemfile":"Gemfile"
+        }
       ]
+    },
+    "--name" : {
+      "description" : "Set the name of the project",
+      "symbol"      : "gemname",
+      "default"     : "gem_name"
     }
   }
 }
