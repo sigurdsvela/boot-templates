@@ -9,6 +9,7 @@
       "description" : "Set the name of your new wordpress plugin"
     },
     "--vcs" : {
+      "description" : "\"Choose\" version controll system",
       "values" : {
         "git" : {
           "../../gitignores/wordpress.gitignore":".gitignore",
