@@ -27,8 +27,7 @@
     },
     "--name" : {
       "description" : "Set the name of the project",
-      "symbol"      : "gemname",
-      "default"     : "gem_name"
+      "symbol"      : "gemname"
     }
   }
 }
