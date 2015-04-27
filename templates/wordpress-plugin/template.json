@@ -1,0 +1,20 @@
+{
+  "name" : "[[!template-name]]",
+  "description" : "[[!description]]",
+  "static" : ["static", "../../wordpress"],
+
+  "options" : {
+    "--name" : {
+      "symbol" : "plugin-name",
+      "description" : "Set the name of your new wordpress plugin"
+    },
+    "--vcs" : {
+      "values" : {
+        "git" : {
+          "../../gitignores/wordpress.gitignore":".gitignore",
+          "vcs/git/gitignore.gitignore":".gitignore"
+        }
+      }
+    }
+  }
+}
