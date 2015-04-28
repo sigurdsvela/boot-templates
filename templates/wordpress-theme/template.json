@@ -1,0 +1,26 @@
+{
+  "name" : "WordPress ",
+  "description" : "Create a new WordPress theme",
+  "static" : ["static", "../../wordpress"],
+
+  "options" : {
+    "--name" : {
+      "symbol" : "theme-name",
+      "description" : "Set the name of your new wordpress plugin"
+    },
+    "--description" : {
+      "symbol" : "description",
+      "description" : "Set the description of your theme",
+      "default" : "description"
+    },
+    "--vcs" : {
+      "description" : "\"Choose\" version controll system",
+      "values" : {
+        "git" : {
+          "../../gitignores/wordpress.gitignore":".gitignore",
+          "vcs/git/gitignore.gitignore":"wp-content/plugins/[[!theme-name]]/.gitignore"
+        }
+      }
+    }
+  }
+}
