@@ -1,5 +1,17 @@
 {
   "name" : "boot-template",
   "description" : "Create starting point for a boot template",
-  "static" : "static"
+  "static" : "static",
+
+  "options" : {
+    "--name" : {
+      "symbol" : "template-name",
+      "description" : "Set the name of the template"
+    },
+    "--description" : {
+      "symbol" : "description",
+      "description" : "describe the new template",
+      "default" : "description"
+    }
+  }
 }
