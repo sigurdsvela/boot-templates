@@ -13,7 +13,7 @@
       "values" : {
         "git" : {
           "../../gitignores/wordpress.gitignore":".gitignore",
-          "vcs/git/gitignore.gitignore":".gitignore"
+          "vcs/git/gitignore.gitignore":"wp-content/plugins/[[!plugin-name]]/.gitignore"
         }
       }
     }
