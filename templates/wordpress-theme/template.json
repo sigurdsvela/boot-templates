@@ -1,5 +1,5 @@
 {
-  "name" : "WordPress ",
+  "name" : "WordPress Theme",
   "description" : "Create a new WordPress theme",
   "static" : ["static", "../../wordpress"],
 
