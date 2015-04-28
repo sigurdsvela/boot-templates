@@ -1,6 +1,6 @@
 {
-  "name" : "[[!template-name]]",
-  "description" : "[[!description]]",
+  "name" : "WordPress Plugin",
+  "description" : "Create a new WordPress plugin",
   "static" : ["static", "../../wordpress"],
 
   "options" : {
