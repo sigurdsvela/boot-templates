@@ -20,6 +20,13 @@
 				"none" : []
 			},
 			"default" : "make"
+		},
+		"--pch" : {
+			"description" : "Add rule to compile headers in makefile",
+			"files" : [
+				{"misc/main.h":"main.h"},
+				{"builder/makefile-pch":"makefile"}
+			]
 		}
 	}
 }
