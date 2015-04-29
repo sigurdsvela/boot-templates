@@ -7,21 +7,19 @@
 		"--vcs" : {
 			"description" : "Choose version controll system",
 			"values" : {
-				"git" : {"../gitignores/C.gitignore":".gitignore"},
-				"svn" : "vcs/.svnignore"
-			}
+				"git" : {"../../gitignores/C.gitignore":".gitignore"},
+				"svn" : "vcs/.svnignore",
+				"none" : []
+			},
+			"default" : "git"
 		},
 		"--builder" : {
 			"description" : "Choose builder script type",
 			"values" : {
-				"make" : "builder/makefile"
-			}
-		},
-		"--tester" : {
-			"description" : "Choose test system",
-			"values" : {
-				"manual" : {"builder/makefile-tester-manual":"makefile"}
-			}
+				"make" : {"builder/makefile":"makefile"},
+				"none" : []
+			},
+			"default" : "make"
 		}
 	}
 }
