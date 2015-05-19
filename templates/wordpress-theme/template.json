@@ -9,9 +9,9 @@
       "description" : "Set the name of your new wordpress plugin"
     },
     "--description" : {
-      "symbol" : "description",
-      "description" : "Set the description of your theme",
-      "default" : "description"
+        "symbol" : "description",
+        "description" : "Set the description of the theme",
+        "default" : "description"
     },
     "--vcs" : {
       "description" : "\"Choose\" version controll system",
