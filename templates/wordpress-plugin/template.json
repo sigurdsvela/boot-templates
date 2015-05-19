@@ -8,6 +8,11 @@
       "symbol" : "plugin-name",
       "description" : "Set the name of your new wordpress plugin"
     },
+    "--description" : {
+        "symbol" : "description",
+        "description" : "Set the description of the plugin",
+        "default" : "description"
+    },
     "--vcs" : {
       "description" : "\"Choose\" version controll system",
       "values" : {
