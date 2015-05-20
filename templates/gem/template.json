@@ -17,7 +17,7 @@
       },
       "default" : "none"
     },
-    "--bunder" : {
+    "--bundler" : {
       "description":"Include Gemspec file",
       "files" : [
         {
