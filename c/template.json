@@ -1,0 +1,24 @@
+{
+	"name" : "c",
+	"static" : "static",
+	"options" : {
+		"--builder" : {
+			"values" : {
+				"make" : {"builder/makefile":"makefile"}
+			},
+			"description" : "Choose build script type",
+			"default":"make"
+		},
+		"--vcs" : {
+			"values" : {
+				"git" : "vcs/.gitignore",
+				"svn" : "vcs/.svnignore"
+			},
+			"description" : "Choose version controll system"
+		},
+		"--entry" : {
+			"files" : {"main.c":"src/main.c"},
+			"description" : "Generate entry pointv"
+		}
+	}
+}
